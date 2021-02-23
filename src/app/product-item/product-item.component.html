@@ -1,0 +1,122 @@
+<h2>Products: </h2>
+
+<div *ngFor="let product of products; let i=index;">
+  <h3 class="h3-titles-link">
+    <a [title]="product.name + ' details'"> </a>
+      <!-- 1 h3 -->
+      <a href="https://www.amazon.com/Acer-SB220Q-Ultra-Thin-Frame-Monitor/dp/B07CVL2D2S/ref=sr_1_2?dchild=1&qid=1614103678&s=computers-intl-ship&sr=1-2" *ngIf="product.name == 'Acer SB220Q bi 21.5 Inches Full HD (1920 x 1080) IPS Ultra-Thin Zero Frame Monitor (HDMI & VGA Port), Black'">{{i + 1}}) {{ product.name}}</a>
+
+      <!-- 2 h3 -->
+      <a href="https://www.amazon.com/AMD-Ryzen-3600-12-Thread-Processor/dp/B07STGGQ18" *ngIf="product.name == 'AMD Ryzen 5 3600 6-Core, 12-Thread Unlocked Desktop Processor with Wraith Stealth Cooler'">{{i + 1}}) {{ product.name }}</a>
+
+      <!-- 3 h3 -->
+      <a href="https://www.amazon.com/Seagate-Portable-External-Hard-Drive/dp/B07CRG94G3" *ngIf="product.name == 'Seagate Portable 2TB External Hard Drive Portable HDD – USB 3.0 for PC, Mac, PS4, & Xbox - 1-Year Rescue Service (STGX2000400)'">{{i + 1}}) {{ product.name }}</a>
+
+      <!-- 4 h3 -->
+      <a href="https://www.amazon.com/CORSAIR-Vengeance-3200MHz-Desktop-Memory/dp/B07D1XCKWW" *ngIf="product.name == 'Corsair Vengeance RGB PRO 16GB (2x8GB) DDR4 3200MHz C16 LED Desktop Memory - Black (CMW16GX4M2C3200C16)'">{{i + 1}}) {{ product.name }}</a>
+
+      <!-- 5 h3 -->
+      <a href="https://www.amazon.com/CORSAIR-RM850x-Certified-Modular-Supply/dp/B079H5WNXN" *ngIf="product.name == 'Corsair RMX Series, RM850x, 850 Watt, 80+ Gold Certified, Fully Modular Power Supply (CP-9020180-NA)'">{{i + 1}}) {{ product.name }}</a>
+
+      <!-- 6 h3 -->
+      <a href="https://www.amazon.com/Intel-i7-10700K-Processor-Unlocked-BX8070110700K/dp/B086ML4XSB" *ngIf="product.name == 'Intel Core i7-10700K Desktop Processor 8 Cores up to 5.1 GHz Unlocked  LGA1200 (Intel 400 Series Chipset) 125W (BX8070110700K)'">{{i + 1}}) {{ product.name }}</a>
+
+      <!-- 7 h3 -->
+      <a href="https://www.amazon.com/ASUS-Geforce-Phoenix-Graphics-PH-GTX1050TI-4G/dp/B01M360WG6" *ngIf="product.name == 'Asus GeForce GTX 1050 Ti 4GB Phoenix Fan Edition DVI-D HDMI DP 1.4 Gaming Graphics Card (PH-GTX1050TI-4G) Graphic Cards'">{{i + 1}}) {{ product.name }}</a>
+
+      <!-- 8 h3 -->
+      <a href="https://www.amazon.com/ASUS-ROG-B550-F-Motherboard-Addressable/dp/B088VSTS9H" *ngIf="product.name == 'ASUS ROG Strix B550-F Gaming (WiFi 6) AMD AM4 Zen 3 Ryzen 5000 & 3rd Gen Ryzen ATX Gaming Motherboard (PCIe 4.0, 2.5Gb LAN, BIOS Flashback, HDMI 2.1, Addressable Gen 2 RGB Header and Aura Sync)'">{{i + 1}}) {{ product.name }}</a>
+
+      <!-- 9 h3 -->
+      <a href="https://www.amazon.com/ID-COOLING-ZOOMFLOW-360X-ARGB-Addressable/dp/B085RWWXW4" *ngIf="product.name == 'ID-COOLING ZOOMFLOW 360X ARGB CPU Water Cooler 5V Addressable RGB AIO Cooler 360mm CPU Liquid Cooler 3X120mm RGB Fan, Intel 115X/1200/2066, AMD AM4'">{{i + 1}}) {{ product.name }}</a>
+
+      <!-- 10 h3 -->
+      <a href="https://www.amazon.com/GOLDEN-FIELD-Z2-Computer-Windows/dp/B076J6P3V6" *ngIf="product.name == 'GOLDEN FIELD Z2 PC Case Gaming Computer Case ATX Cases Mid Tower Tempered Glass Side Panels'">{{i + 1}}) {{ product.name }}</a>
+  </h3>
+
+  <!-- 1 img link-->
+    <a href="https://www.amazon.com/Acer-SB220Q-Ultra-Thin-Frame-Monitor/dp/B07CVL2D2S/ref=sr_1_2?dchild=1&qid=1614103678&s=computers-intl-ship&sr=1-2">
+    <div *ngIf="product.name == 'Acer SB220Q bi 21.5 Inches Full HD (1920 x 1080) IPS Ultra-Thin Zero Frame Monitor (HDMI & VGA Port), Black'">
+        <img  
+    src="https://images-na.ssl-images-amazon.com/images/I/81QpkIctqPL._AC_SX679_.jpg" width="150px">
+    </div></a>
+
+    <!-- 2 img link-->
+    <a href="https://www.amazon.com/AMD-Ryzen-3600-12-Thread-Processor/dp/B07STGGQ18">
+    <div *ngIf="product.name == 'AMD Ryzen 5 3600 6-Core, 12-Thread Unlocked Desktop Processor with Wraith Stealth Cooler'">
+        <img 
+    src="https://images-na.ssl-images-amazon.com/images/I/71WPGXQLcLL._AC_SL1384_.jpg" width="150px">
+    </div></a>
+
+    <!-- 3 img link-->
+    <a href="https://www.amazon.com/Seagate-Portable-External-Hard-Drive/dp/B07CRG94G3">
+    <div *ngIf="product.name == 'Seagate Portable 2TB External Hard Drive Portable HDD – USB 3.0 for PC, Mac, PS4, & Xbox - 1-Year Rescue Service (STGX2000400)'">
+        <img 
+    src="https://images-na.ssl-images-amazon.com/images/I/81tjLksKixL._AC_SL1500_.jpg" width="100px">
+    </div></a>
+
+    <!-- 4 img link-->
+    <a href="https://www.amazon.com/CORSAIR-Vengeance-3200MHz-Desktop-Memory/dp/B07D1XCKWW">
+    <div *ngIf="product.name == 'Corsair Vengeance RGB PRO 16GB (2x8GB) DDR4 3200MHz C16 LED Desktop Memory - Black (CMW16GX4M2C3200C16)'"> <img src="https://images-na.ssl-images-amazon.com/images/I/71Kkm5nIRKL._AC_SL1500_.jpg" width="150px">
+    </div></a>
+
+    <!-- 5 img link-->
+    <a href="https://www.amazon.com/CORSAIR-RM850x-Certified-Modular-Supply/dp/B079H5WNXN">
+    <div *ngIf="product.name == 'Corsair RMX Series, RM850x, 850 Watt, 80+ Gold Certified, Fully Modular Power Supply (CP-9020180-NA)'">
+        <img 
+    src="https://images-na.ssl-images-amazon.com/images/I/71dj%2B5GQwEL._AC_SL1500_.jpg" width="150px">
+    </div></a>
+
+    <!-- 6 img link-->
+    <a href="https://www.amazon.com/Intel-i7-10700K-Processor-Unlocked-BX8070110700K/dp/B086ML4XSB">
+    <div *ngIf="product.name == 'Intel Core i7-10700K Desktop Processor 8 Cores up to 5.1 GHz Unlocked  LGA1200 (Intel 400 Series Chipset) 125W (BX8070110700K)'">
+        <img 
+    src="https://images-na.ssl-images-amazon.com/images/I/71P3chRzgNL._AC_SL1500_.jpg" width="150px">
+    </div></a>
+
+    <!-- 7 img link-->
+    <a href="https://www.amazon.com/ASUS-Geforce-Phoenix-Graphics-PH-GTX1050TI-4G/dp/B01M360WG6">
+    <div *ngIf="product.name == 'Asus GeForce GTX 1050 Ti 4GB Phoenix Fan Edition DVI-D HDMI DP 1.4 Gaming Graphics Card (PH-GTX1050TI-4G) Graphic Cards'">
+        <img 
+    src="https://images-na.ssl-images-amazon.com/images/I/81-pAz2ReKL._AC_SL1500_.jpg" width="150px">
+    </div></a>
+
+    <!-- 8 img link-->
+    <a href="https://www.amazon.com/ASUS-ROG-B550-F-Motherboard-Addressable/dp/B088VSTS9H">
+    <div *ngIf="product.name == 'ASUS ROG Strix B550-F Gaming (WiFi 6) AMD AM4 Zen 3 Ryzen 5000 & 3rd Gen Ryzen ATX Gaming Motherboard (PCIe 4.0, 2.5Gb LAN, BIOS Flashback, HDMI 2.1, Addressable Gen 2 RGB Header and Aura Sync)'">
+        <img 
+    src="https://images-na.ssl-images-amazon.com/images/I/81x069mwcbL._AC_SL1500_.jpg" width="150px">
+    </div></a>
+
+    <!-- 9 img link-->
+    <a href="https://www.amazon.com/ID-COOLING-ZOOMFLOW-360X-ARGB-Addressable/dp/B085RWWXW4">
+    <div *ngIf="product.name == 'ID-COOLING ZOOMFLOW 360X ARGB CPU Water Cooler 5V Addressable RGB AIO Cooler 360mm CPU Liquid Cooler 3X120mm RGB Fan, Intel 115X/1200/2066, AMD AM4'">
+        <img 
+    src="https://images-na.ssl-images-amazon.com/images/I/51TeV4c0EXL._AC_SL1000_.jpg" width="150px">
+    </div></a>
+
+    <!-- 10 img link -->
+    <a href="https://www.amazon.com/GOLDEN-FIELD-Z2-Computer-Windows/dp/B076J6P3V6">
+    <div *ngIf="product.name == 'GOLDEN FIELD Z2 PC Case Gaming Computer Case ATX Cases Mid Tower Tempered Glass Side Panels'">
+        <img 
+    src="https://images-na.ssl-images-amazon.com/images/I/61hH5ysHSfL._AC_SL1000_.jpg" width="150px">
+    </div></a>
+
+  <p *ngIf="product.description">
+    <span style="font-weight:bold; color: black;">Description:</span> <span style="color: black;">{{product.description}}</span>
+  </p>
+  
+  <a href="https://web.telegram.org/#/login"> <button class="share" (click)="share()" style="font-size:24px;" class="fa">&#xf2c6;
+        share
+    </button> 
+  </a>
+
+  <app-product-alerts [product]="product" (notify)="onNotify()">
+  </app-product-alerts>
+</div>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
